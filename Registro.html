@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari</title>
+    <script src="https://kit.fontawesome.com/f0eaefb106.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" href="./img/ferrari-logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="header">
+
+    </header>
+
+    <main>
+     <br>
+
+     <div id="formulario">
+
+     <form action="mailto:FerrariClub@gmail.com" method="post" enctype="text/plain" id="form">
+
+     <label for="Nombre">Nombre:</label>
+     <input type="text" name="Nombre" id="Nombre" size="25" maxlength="30" >
+
+     <br><br>
+
+     <label for="Apellido">Apellido:</label>
+     <input type="text" name="Apellido" id="Apellido" size="25" maxlength="30" >
+
+     <br><br>
+
+     <label for="Pais">Pais:</label>
+     <input type="text" name="Pais" id="Pais" size="25" maxlength="30">
+
+     <br><br>
+
+     <label for="Provincia">Provincia:</label>
+     <input type="text" name="Provincia" id="Provincia" size="25" maxlength="30">
+
+     <br><br>
+
+     <label for="Ciudad">Ciudad:</label>
+     <input type="text" name="Ciudad" id="Ciudad" size="25" maxlength="30">
+
+     <br><br>
+
+     <label for="CodigoPostal">Codigo postal:</label>
+     <input type="number" name="CodigoPostal" id="CodigoPostal" min="0" max="9999">
+     <b id="codigo" style="font-size: 12px"></b>
+
+     <br>
+
+     <label for="DNI">DNI:</label>
+     <input type="number" name="DNI" id="DNI" min="0" max="99999999" >
+
+     <br><br>
+
+     <label for="FechaDeNacimiento">Fecha de nacimiento:</label>
+     <input type="date" name="FechaDeNacimiento" id="FechaDeNacimiento" >
+
+     <br><br>
+
+     <label for="Email">Email:</label>
+     <input type="email" name="Email" id="Email" >
+
+     <br><br>
+
+     <label for="Telefono">Telefono:</label>
+     <input type="tel" name="Telefono" id="Telefono">
+
+     <br><br>
+
+     <label for="Genero">Genero:</label>
+     <select name="Genero" id="Genero">
+         <option value="Masculino">Masculino</option>
+         <option value="Femenino">Femenino</option>
+         <option value="Otro">Otro</option>
+     </select>
+
+     <br><br><br><br>
+
+     <input type="submit" value="Enviar">
+
+     <br><br>
+
+     <input type="checkbox" name="Condiciones" required><span>Acepto los terminos y condiciones</span>
+
+     <br><br>
+
+    </form>
+
+     </div>
+
+    </main>
+
+    <footer id="footer">
+       
+    </footer>
+    
+    <script src="./JS/main.js"></script>
+    
+</body>
+
+</html>
