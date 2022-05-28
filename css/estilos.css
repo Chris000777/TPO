@@ -46,7 +46,7 @@ a{
 }
 .fondoindex {
   display: flex;
-  justify-content: space-around;
+  justify-content:space-around;
 }
 .fondoindex>div{
     flex: 50%;
@@ -144,10 +144,6 @@ p,h2,h3{
 #pilotos{
     margin: 10px;
 }
-.menuContenido{
-    display: flex;
-    flex-direction: column;
-}
 
 @media (max-width:815px){
     .fondoindex{
@@ -187,5 +183,8 @@ p,h2,h3{
     }
     #ingreso{
         margin: 10px 15%;
+    }
+    .imagen{
+        height: 300px;
     }
 }
