@@ -11,6 +11,7 @@ document.getElementById("header").innerHTML=`
     <h1>Scuderia Ferrari</h1>
     <br>
 `
+
 document.getElementById("footer").innerHTML=`
 <nav id="navfooter">
     
@@ -37,6 +38,7 @@ document.getElementById("footer").innerHTML=`
     <br>
     <p align="center">Derechos reservados @2022</p>
 `
+
 document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("form").addEventListener("submit", validacion);
 });
@@ -45,7 +47,7 @@ function validacion(event) {
     event.preventDefault();
     let x=document.getElementById("CodigoPostal").value;
     if (isNaN(x) || x < 1 || x > 9999) {
-        let text = "El codigo postal ingresado no es valido";
+        let text = "<p>El código postal ingresado no es valido</p>";
         document.getElementById("codigo").innerHTML = text;
         return;
     }
