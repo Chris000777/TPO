@@ -45,10 +45,34 @@ document.addEventListener("DOMContentLoaded", function(){
 
 function validacion(event) {
     event.preventDefault();
-    let x=document.getElementById("CodigoPostal").value;
-    if (isNaN(x) || x < 1 || x > 9999) {
-        let text = "<p>El código postal ingresado no es valido</p>";
-        document.getElementById("codigo").innerHTML = text;
+    let a=document.getElementById("Nombre").value;
+    if(a.length==0){
+        let text1 = "<p>El Nombre ingresado no es valido</p>";
+        document.getElementById("nomb").innerHTML = text1;
+        return;
+    }
+    let b=document.getElementById("Apellido").value;
+    if(b.length==0){
+        let text2 = "<p>El Apellido ingresado no es valido</p>";
+        document.getElementById("apell").innerHTML = text2;
+        return;
+    }
+    let c=document.getElementById("Pais").value;
+    if(c.length==0){
+        let text3 = "<p>No a ingresado ningún País</p>";
+        document.getElementById("pa").innerHTML = text3;
+        return;
+    }
+    let d=document.getElementById("CodigoPostal").value;
+    if (d<1 || d>9999) {
+        let text4 = "<p>El código postal ingresado no es valido</p>";
+        document.getElementById("codigo").innerHTML = text4;
+        return;
+    }
+    let e=document.getElementById("DNI").value;
+    if (e<1) {
+        let text5 = "<p>El DNI ingresado no es valido</p>";
+        document.getElementById("dn").innerHTML = text5;
         return;
     }
     this.submit()
