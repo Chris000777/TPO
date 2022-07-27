@@ -26,7 +26,7 @@ h1{
     width: 100%;
 }
 a{
-    color: black;
+    color: black !important; 
     border-color: aliceblue;
     border: 1px;
 }
@@ -144,6 +144,30 @@ p,h2,h3{
     margin: 10px;
 }
 
+.cabeza{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.carro{
+    background-color: rgb(218, 218, 218);
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.compra{
+    background-color: rgb(218, 218, 218);
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#cuerpo{
+    vertical-align: middle
+}
+
 @media (max-width:815px){
     .fondoindex{
         flex-direction: column;
@@ -172,7 +196,11 @@ p,h2,h3{
     .f175{
         width: 70%;
     }
+    #fotoTienda{
+        width: 180px;
+    }
 }
+
 
 @media(max-width:415px){
 
@@ -198,5 +226,11 @@ p,h2,h3{
     .piloto{
         width: 90%;
         height: 250px;
+    }
+    #fotoTienda{
+        width: 150px;
+    }
+    .descripcion{
+        display: none;
     }
 }

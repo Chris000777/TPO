@@ -6,6 +6,7 @@ document.getElementById("header").innerHTML=`
         <a class="menu" href="./Sucursales.html">Sucursales</a>
         <a class="menu" href="./Registro.html">Registro</a>
         <a class="menu" href="./Iniciar sesión.html">Iniciar sesión</a>
+        <a class="menu" href="./tienda.html">Tienda</a>
     </nav>
 
     <h1>Scuderia Ferrari</h1>
@@ -77,3 +78,27 @@ function validacion(event) {
     }
     this.submit()
 } 
+
+const tabla = document.querySelector('#cuerpo');
+          const opciones = {
+            method :'GET'
+          }
+
+          fetch('https://backflaskcrud.herokuapp.com/productos',opciones)
+            .then(response => response.json())
+            .then(response =>{
+
+                response.forEach(elemento => {
+                  
+                  tabla.innerHTML +=  `
+                            <tr>
+                              <th id="fotoTienda" scope="row"><img src="./uploads/${elemento.foto}" alt="" width="400px"></th>
+                              <td>${elemento.nombre}</td>
+                              <td class="descripcion">${elemento.descripcion}</td>
+                              <td>${elemento.precio}</td>
+                              <td><a href="#" class="btn btn-danger" style="color:rgb(230, 230, 230)!important">Comprar</a></td>
+                              <td><a href="#" class="btn btn-success" style="color:rgb(230, 230, 230)!important">Añadir al carrito</a></td>
+                            </tr>
+                  `
+                });
+            });
